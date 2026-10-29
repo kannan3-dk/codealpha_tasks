@@ -1,0 +1,6 @@
+{
+  "name": "AuraCloth - Quiet Luxury Fashion",
+  "description": "AuraCloth e-commerce storefront for affordable luxury fashion with complete product catalog, shopping cart, checkout simulation, and customer accounts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
