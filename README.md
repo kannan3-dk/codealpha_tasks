@@ -62,11 +62,11 @@ The client is initialized using `@supabase/supabase-js` with URL normalization:
 ```javascript
 import { createClient } from "@supabase/supabase-js";
 
-// 1. Supabase Project URL:
-const SUPABASE_URL = "https://zwaamprxbuzdoqjhhkwc.supabase.co/rest/v1/";
+// 1. Supabase Project URL (configured in .env or src/supabaseClient.js):
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || "YOUR_SUPABASE_URL";
 
 // 2. Supabase Public Anon Key:
-const SUPABASE_PUBLIC_KEY = "sb_publishable_ufv3QGosjwi2jIFzGrVcQA_mZi_w6Gp";
+const SUPABASE_PUBLIC_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || "YOUR_SUPABASE_ANON_KEY";
 
 // Normalize URL to project root so auth and rest endpoints work smoothly
 const rootUrl = SUPABASE_URL.replace(/\/rest\/v1\/?$/, "");
